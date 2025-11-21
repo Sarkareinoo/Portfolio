@@ -150,10 +150,10 @@ body{
     }
 
   .hexagon {
-    width: 40px;        /* tiny width */
-    height: 22px;       /* tiny height */
-    margin: 3px;        /* very tight spacing */
-    font-size: 7px;     /* smaller text */
+    width: 40px;        
+    height: 22px;       
+    margin: 3px;        
+    font-size: 7px;     
   }
 
   .hexagon::before {
