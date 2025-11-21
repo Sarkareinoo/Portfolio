@@ -105,8 +105,8 @@ body{
 }
 
 @media screen and (max-width: 365px) {
-    .header .p{font-size: 25px; width: 170px; }
-    .header .p1{font-size: 25px; width: 225px;}
+    .header .p{font-size: 20px; width: 160px; }
+    .header .p1{font-size: 20px; width: 200px;}
     .font-size-fix span{
         font-size: 17px;
     }
