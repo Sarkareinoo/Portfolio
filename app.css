@@ -96,21 +96,7 @@ body{
     font-size: 21px;
 }
 
-@media screen and (max-width: 660px) {
-    .header .p{font-size: 40px; width: 250px; }
-    .header .p1{font-size: 40px; width: 350px;}
-    .font-size-fix span{
-        font-size: 17px;
-    }
-}
 
-@media screen and (max-width: 365px) {
-    .header .p{font-size: 20px; width: 160px; }
-    .header .p1{font-size: 20px; width: 200px;}
-    .font-size-fix span{
-        font-size: 17px;
-    }
-}
 
 /* Default desktop hexagon */
 .hexagon {
@@ -153,6 +139,12 @@ body{
 
 /* Responsive for mobile screens */
 @media (max-width: 576px) {
+  .header .p{font-size: 20px; width: 160px; }
+    .header .p1{font-size: 20px; width: 200px;}
+    .font-size-fix span{
+        font-size: 17px;
+    }
+
   .hexagon {
     width: 40px;        /* tiny width */
     height: 22px;       /* tiny height */
@@ -175,6 +167,13 @@ body{
 
 /* Tablet view: 577px to 768px */
 @media (max-width: 768px) and (min-width: 577px) {
+
+  .header .p{font-size: 40px; width: 250px; }
+    .header .p1{font-size: 40px; width: 350px;}
+    .font-size-fix span{
+        font-size: 17px;
+    }
+
   .hexagon {
     width: 70px;
     height: 38.5px;
@@ -194,3 +193,5 @@ body{
     border-top: 19.25px solid #ad7715;
   }
 }
+
+
