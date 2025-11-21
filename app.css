@@ -3,6 +3,10 @@
 
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 :root{
     --firstcolor:#ecf2fb;
     --secondcolor:#6bb879;
