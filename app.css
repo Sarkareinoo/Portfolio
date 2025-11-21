@@ -111,3 +111,86 @@ body{
         font-size: 17px;
     }
 }
+
+/* Default desktop hexagon */
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background-color: #ad7715;
+  position: relative;
+  margin: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 27.5px solid #ad7715;
+}
+
+.hexagon::after {
+  top: 100%;
+  border-top: 27.5px solid #ad7715;
+}
+
+.hexagon-inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 576px) {
+  .hexagon {
+    width: 40px;        /* tiny width */
+    height: 22px;       /* tiny height */
+    margin: 3px;        /* very tight spacing */
+    font-size: 7px;     /* smaller text */
+  }
+
+  .hexagon::before {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 11px solid #ad7715;
+  }
+
+  .hexagon::after {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 11px solid #ad7715;
+  }
+}
+
+/* Tablet view: 577px to 768px */
+@media (max-width: 768px) and (min-width: 577px) {
+  .hexagon {
+    width: 70px;
+    height: 38.5px;
+    margin: 10px;
+    font-size: 10px;
+  }
+
+  .hexagon::before {
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 19.25px solid #ad7715;
+  }
+
+  .hexagon::after {
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 19.25px solid #ad7715;
+  }
+}
